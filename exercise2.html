@@ -9,7 +9,6 @@
         text-align: center;
         margin-top: 100px;
       }
-
       #box {
         width: 150px;
         height: 150px;
@@ -21,11 +20,9 @@
           height 0.3s,
           background-color 0.3s;
       }
-
       #box:hover {
         background-color: orange;
       }
-
       p {
         margin-top: 25px;
       }
@@ -33,20 +30,14 @@
   </head>
   <body>
     <div id="box"></div>
-
     <script>
       const box = document.getElementById("box");
-
       let size = 150;
-
-      // Increase the box size when clicked
       box.addEventListener("click", function () {
         size += 30;
         box.style.width = size + "px";
         box.style.height = size + "px";
       });
-
-      // Reset the box size when double-clicked
       box.addEventListener("dblclick", function () {
         size = 150;
         box.style.width = size + "px";
