@@ -1,1 +1,25 @@
-        <!-- Write your code here -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Change background</button>
+    <script>
+      let button = document.getElementsById("btn");
+      let f = 0;
+      button.addEventListener("click", () => {
+        if (f == 0) {
+          document.body.style.backgroundColor = "black";
+          button.textContent = "Hello";
+          f = 1;
+        } else {
+          document.body.style.backgroundColor = "white";
+          f = 0;
+        }
+      });
+    </script>
+  </body>
+</html>        <!-- Write your code here -->
